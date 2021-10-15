@@ -36,9 +36,9 @@ a:hover {
 }
 .text-gradient {
   background: #0f0;
-  background: -webkit-linear-gradient(120deg,rgb(255, 0, 0) 0,#0084ff 100%);
-  background: -moz-linear-gradient(120deg,rgb(255, 0, 0) 0,#0084ff 100%);
-  background: linear-gradient(160deg,rgb(255, 0, 0) 0,#0084ff 100%);
+  background: -webkit-linear-gradient(120deg,rgb(255, 0, 0) 0,#ffd000 100%);
+  background: -moz-linear-gradient(120deg,rgb(255, 0, 0) 0,#ffd000 100%);
+  background: linear-gradient(160deg,rgb(255, 0, 0) 0,#ffd000 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent
 }
