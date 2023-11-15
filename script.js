@@ -2,7 +2,7 @@
   (j = 0),
   (M = Math),
   setInterval(() => {
-    for (T = "X%x~.:·", s = "", i = 492; i--; )
+    for (T = "łfTLç~", s = "", i = 492; i--; )
       s +=
         i % 41
           ? T[
@@ -16,3 +16,9 @@
     p.textContent = s;
     j++;
   }, 150);
+
+const animation = document.getElementsByTagName("pre")[0];
+
+animation.addEventListener("click", () => {
+  window.scrollTo({ top: 2000, behavior: "smooth" });
+});

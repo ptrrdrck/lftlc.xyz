@@ -1,11 +1,130 @@
 @charset "UTF-8";
 
-body {
-  background: #222;
-  color: rgb(255, 255, 255);
-  display: grid;
-  font-size: 3vw;
+@media (max-width: 599px) {
+  a {
+    margin: 0 0 50px;
+  }
+  #get-quote {
+    font-size: 24px;
+  }
+  .portfolio {
+    margin: 0 18% 60px;
+  }
+  #fee {
+    margin: 0 18% 60px;
+  }
+  #info-header {
+    padding: 50px 34px;
+  }
+}
+
+@media (min-width: 600px) {
+  a {
+    margin: 0 0 50px;
+  }
+  #get-quote {
+    font-size: 36px;
+  }
+  .portfolio {
+    margin: 0 30% 60px;
+  }
+  #fee {
+    margin: 0 30% 60px;
+  }
+  #info-header {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio {
+    margin: 0 39% 60px;
+  }
+  #fee {
+    margin: 0 39% 60px;
+  }
+  #info-header {
+    padding: 50px;
+  }
+}
+
+body,
+header,
+pre {
   place-items: center;
   margin: 0;
   height: 100vh;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  background: #222;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-row: 2;
+}
+
+pre {
+  display: grid;
+  grid-row: 1;
+  cursor: pointer;
+  width: 100vw;
+}
+
+#info-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#title {
+  font-family: "Array", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+#location {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+#services {
+  line-height: 0.96;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+
+#get-quote {
+  font-family: "Array", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.88px;
+}
+
+a.portfolio {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  text-align: center;
+}
+
+a.quote {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a.quote:hover {
+  text-transform: uppercase;
+}
+
+a.portfolio:hover,
+a.portfolio:active {
+  font-style: italic;
 }
