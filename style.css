@@ -10,11 +10,8 @@
   .portfolio {
     margin: 0 18% 60px;
   }
-  #fee {
-    margin: 0 18% 60px;
-  }
   #info-header {
-    padding: 50px 34px;
+    padding: 50px 23px;
   }
 }
 
@@ -26,25 +23,19 @@
     font-size: 36px;
   }
   .portfolio {
-    margin: 0 30% 60px;
-  }
-  #fee {
-    margin: 0 30% 60px;
+    margin: 0 28% 60px;
   }
   #info-header {
-    padding: 50px;
+    padding: 50px 23px;
   }
 }
 
 @media (min-width: 1024px) {
   .portfolio {
-    margin: 0 39% 60px;
-  }
-  #fee {
-    margin: 0 39% 60px;
+    margin: 0 37% 60px;
   }
   #info-header {
-    padding: 50px;
+    padding: 50px 23px;
   }
 }
 
@@ -97,7 +88,7 @@ pre {
 }
 
 #services {
-  line-height: 0.96;
+  line-height: 0.99;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
 }
@@ -107,24 +98,21 @@ pre {
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.88px;
+  text-decoration: none !important;
+  color: #fff;
+}
+
+#get-quote:hover {
+  text-transform: uppercase;
+  text-decoration: none !important;
 }
 
 a.portfolio {
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
+  color: #fff;
   text-align: center;
+  padding: 10px;
 }
 
-a.quote {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-a.quote:hover {
-  text-transform: uppercase;
-}
-
-a.portfolio:hover,
-a.portfolio:active {
-  font-style: italic;
+a.portfolio:hover {
+  text-align: center;
 }
