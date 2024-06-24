@@ -1,0 +1,97 @@
+<!-- © 2023 Peter Rodrick <pete@lftlc.xyz> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>call-builder</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="fade-in">
+    <header><span id="page-title">call-trainer</span></header>
+    <main>
+      <div id="scene-builder">
+        <section id="scene-info">
+          <p class="section-title">Build the call's dispatch.</p>
+          <p class="section-info">Unchanged variables are chosen randomly.</p>
+        </section>
+        <section id="scene">
+          <div class="selector">
+            <label for="season-selector" class="selector-title">Season</label>
+            <div id="season-select-button" class="select-button">
+              <select id="season-selector"></select>
+            </div>
+          </div>
+          <div class="selector">
+            <label for="time-selector" class="selector-title">Time</label>
+            <div id="time-select-button" class="select-button">
+              <select id="time-selector"></select>
+            </div>
+          </div>
+          <div class="selector">
+            <label for="origin-selector" class="selector-title">Origin</label>
+            <div id="origin-select-button" class="select-button">
+              <select id="origin-selector"></select>
+            </div>
+          </div>
+          <div class="selector">
+            <label for="location-selector" class="selector-title"
+              >Location</label
+            >
+            <div id="location-select-button" class="select-button">
+              <select id="location-selector"></select>
+            </div>
+          </div>
+          <div class="selector hide" id="surf">
+            <label for="surf-selector" class="selector-title">Surf</label>
+            <div id="surf-select-button" class="select-button">
+              <select id="surf-selector"></select>
+            </div>
+          </div>
+          <div class="selector">
+            <label for="patients-selector" class="selector-title"
+              >Patients</label
+            >
+            <div id="patients-select-button" class="select-button">
+              <select id="patients-selector"></select>
+            </div>
+          </div>
+          <div class="selector">
+            <label for="age-selector" class="selector-title">Age</label>
+            <div id="age-select-button" class="select-button">
+              <select id="age-selector"></select>
+            </div>
+          </div>
+          <div class="selector">
+            <label for="sex-selector" class="selector-title">Sex</label>
+            <div id="sex-select-button" class="select-button">
+              <select id="sex-selector"></select>
+            </div>
+          </div>
+          <div class="selector">
+            <label for="nature-selector" class="selector-title">Nature</label>
+            <div id="nature-select-button" class="select-button">
+              <select id="nature-selector"></select>
+            </div>
+          </div>
+        </section>
+        <button class="next-button" id="build-scene-button">Run Call</button>
+      </div>
+      <div id="built-scene-placeholder"></div>
+      <div id="built-patients-placeholder">
+        <div id="patients-container"></div>
+      </div>
+    </main>
+    <footer>
+      <span class="info"
+        >Made by
+        <a href="https://lftlc.xyz/" target="_blank" id="footer-link"
+          >lftlc.xyz</a
+        ></span
+      >
+    </footer>
+    <script src="./calls.js" type="text/javascript"></script>
+    <script src="./assessment.js" type="text/javascript"></script>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
