@@ -10,9 +10,6 @@
   .portfolio {
     margin: 0 18% 60px;
   }
-  #info-header {
-    padding: 50px 23px;
-  }
 }
 
 @media (min-width: 600px) {
@@ -25,17 +22,11 @@
   .portfolio {
     margin: 0 28% 60px;
   }
-  #info-header {
-    padding: 50px 23px;
-  }
 }
 
 @media (min-width: 1024px) {
   .portfolio {
     margin: 0 37% 60px;
-  }
-  #info-header {
-    padding: 50px 23px;
   }
 }
 
@@ -58,6 +49,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 40px;
   grid-row: 2;
 }
 
@@ -72,14 +64,18 @@ pre {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  padding: 0 23px;
 }
 
 #lace-mark {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
-  width: min(220px, 55vw);
+  width: min(90px, 22vw);
   height: auto;
-  margin-bottom: 18px;
+  pointer-events: none;
 }
 
 #title {
@@ -126,7 +122,7 @@ pre {
   letter-spacing: 0.88px;
   text-decoration: none !important;
   color: #fff;
-  margin: 60px 0 0;
+  margin: 0;
 }
 
 #get-quote:hover {
