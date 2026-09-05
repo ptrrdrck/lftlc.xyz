@@ -73,7 +73,6 @@ pre {
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
-  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 #title {
