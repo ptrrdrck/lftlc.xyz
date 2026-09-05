@@ -75,6 +75,13 @@ pre {
   margin-bottom: 60px;
 }
 
+#lace-mark {
+  display: block;
+  width: min(220px, 55vw);
+  height: auto;
+  margin-bottom: 18px;
+}
+
 #title {
   font-family: "Array", sans-serif;
   font-size: 48px;
