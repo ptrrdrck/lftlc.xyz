@@ -79,6 +79,8 @@ footer {
   width: min(45px, 11vw);
   height: auto;
   pointer-events: none;
+  /* The center of mass, so the mark spins about its bend. */
+  transform-origin: 30.43% 68.94%;
   will-change: transform;
 }
 
