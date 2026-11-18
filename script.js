@@ -1,5 +1,6 @@
 // Float the lace mark around the viewport as a spinning rigid body.
-// Off-center wall hits and wall grip turn straight-line motion into spin and back.
+// Off-center wall hits and wall grip turn straight-line motion into spin and back,
+// and grip bleeds energy until it drifts to a stop.
 (() => {
   const mark = document.getElementById("lace-mark");
   if (!mark) return;
@@ -7,8 +8,8 @@
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   // Tuned in the Lace Bounce Lab mock.
-  const SPEED = 50; // cruise speed, px per second
-  const RECOVERY = 0.1; // per second: how fast speed drifts back to SPEED
+  // Nothing tops up its energy, so wall grip slowly brings it to rest.
+  const SPEED = 50; // launch speed, px per second
   const RESTITUTION = 1; // bounciness
   const FRICTION = 0.2; // wall grip
   const MAX_SPIN = 1080; // deg per second
@@ -72,18 +73,6 @@
     const cap = MAX_SPIN * DEG;
     if (w > cap) w = cap;
     else if (w < -cap) w = -cap;
-
-    // Ease speed back toward the cruise speed.
-    const sp = Math.hypot(vx, vy);
-    if (sp < 0.5) {
-      const ang = Math.random() * Math.PI * 2;
-      vx = Math.cos(ang);
-      vy = Math.sin(ang);
-    } else {
-      const ns = sp + (SPEED - sp) * (1 - Math.exp(-RECOVERY * dt));
-      vx *= ns / sp;
-      vy *= ns / sp;
-    }
 
     x += vx * dt;
     y += vy * dt;
